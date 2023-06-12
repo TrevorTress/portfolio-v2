@@ -7,11 +7,11 @@ const ContainerComp = ({ className, children }) => {
 // main page container
 const Container = styled(ContainerComp)`
 	position: relative;
-	top: var(--header-height); // shift past header
+	top: var(--header-height);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - var(--header-height) - var(--footer-height)); // (page - header - footer)
+	height: calc(100vh - var(--header-height) - var(--footer-height));
 	width: 100%;
 	padding: 2rem;
 

@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 import Header from './I-Header';
-import Navbar from './II-Navbar';
-import Container from './III-Container';
-import ContentNav from './IV-ContentNav';
-import Content from './V-Content';
-import Footer from './VI-Footer';
+import Container from './II-Container';
+import Footer from './III-Footer';
 
 import bg from './assets/bg.jpeg';
 
@@ -13,12 +10,7 @@ const MainComp = ({ className, children }) => {
 	return (
 		<main className={className}>
 			<Header />
-			<Navbar />
-			<Container>
-				{/* <ContentNav /> */}
-
-				<Content>{children}</Content>
-			</Container>
+			<Container>{children}</Container>
 			<Footer />
 		</main>
 	);
